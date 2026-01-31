@@ -1,0 +1,185 @@
+ //       {
+      //         protocol: "https",
+      //         hostname: "cdn.motor1.com",
+      //         pathname: "/images/**",
+      //       },
+      //       {
+      //         protocol: "https",
+      //         hostname: "upload.wikimedia.org",
+      //         pathname: "/wikipedia/commons/**",
+      //       },
+      //       {
+      //         protocol: "https",
+      //         hostname: "images.netdirector.co.uk",
+      //         pathname: "/**",
+      //       },
+      //       {
+      //         protocol: "https",
+      //         hostname: "ymimg1.b8cdn.com",
+      //         pathname: "/**",
+      //       },
+      //       {
+      //         protocol: "https",
+      //         hostname: "www.topgear.com",
+      //         pathname: "/sites/default/files/**",
+      //       },
+      //       {
+      //         protocol: "https",
+      //         hostname: "www.truck1.net",
+      //         pathname: "/img/**",
+      //       },
+      //       {
+      //         protocol: "https",
+      //         hostname: "media.elbalad.news",
+      //         pathname: "/**",
+      //       },
+      //       {
+      //         protocol: "https",
+      //         hostname: "media.istockphoto.com",
+      //         pathname: "/**",
+      //       },
+      //       {
+      //         protocol: "https",
+      //         hostname: "www.autopediame.com",
+      //         pathname: "/storage/images/**",
+      //       },
+      //       {
+      //         protocol: "https",
+      //         hostname: "hips.hearstapps.com",
+      //         pathname: "/**",
+      //       },
+      //       {
+      //         protocol: "https",
+      //         hostname: "bugatti-newsroom.imgix.net",
+      //         pathname: "/**",
+      //       },
+      //       {
+      //         protocol: "https",
+      //         hostname: "robbreport.com",
+      //         pathname: "/wp-content/uploads/**",
+      //       },
+      //       {
+      //         protocol: "https",
+      //         hostname: "bugatti.imgix.net",
+      //         pathname: "/**",
+      //       },
+      //       {
+      //         protocol: "https",
+      //         hostname: "di-uploads-pod20.dealerinspire.com",
+      //         pathname: "/**",
+      //       },
+      //       {
+      //         protocol: "https",
+      //         hostname: "www.mideast.dodge.com",
+      //         pathname: "/**",
+      //       },
+      //       {
+      //         protocol: "https",
+      //         hostname: "s3.amazonaws.com",
+      //         pathname: "/**",
+      //       },
+      //       {
+      //         protocol: "https",
+      //         hostname: "media.ed.edmunds-media.com",
+      //         pathname: "/**",
+      //       },
+      //       {
+      //         protocol: "https",
+      //         hostname: "arabgt.com",
+      //         pathname: "/**",
+      //       },
+      //       {
+      //         protocol: "https",
+      //         hostname: "stimg.cardekho.com",
+      //         pathname: "/**",
+      //       },
+      //       {
+      //         protocol: "https",
+      //         hostname: "i.gaw.to",
+      //         pathname: "/**",
+      //       },
+      //       {
+      //         protocol: "https",
+      //         hostname: "contactcars.fra1.cdn.digitaloceanspaces.com",
+      //         pathname: "/**",
+      //       },
+      //       {
+      //         protocol: "https",
+      //         hostname: "cache2.arabwheels.ae",
+      //         pathname: "/**",
+      //       },
+      //       {
+      //         protocol: "https",
+      //         hostname: "newsroom.porsche.com",
+      //         pathname: "/**",
+      //       },
+      //       {
+      //         protocol: "https",
+      //         hostname: "arabsauto.com",
+      //         pathname: "/**",
+      //       },
+      //       {
+      //         protocol: "https",
+      //         hostname: "www.mercedes-benz.com.eg",
+      //         pathname: "/**",
+      //       },
+      //       {
+      //         protocol: "https",
+      //         hostname: "car-images.bauersecure.com",
+      //         pathname: "/**",
+      //       },
+      //       {
+      //         protocol: "https",
+      //         hostname: "cache4.arabwheels.ae",
+      //         pathname: "/**",
+      //       },
+      //       {
+      //         protocol: "https",
+      //         hostname: "www.lambocars.com",
+      //         pathname: "/**",
+      //       },
+      //       {
+      //         protocol: "https",
+      //         hostname: "www.lamborghini.com",
+      //         pathname: "/**",
+      //       },
+      //       {
+      //         protocol: "https",
+      //         hostname: "www.mideast.jeep.com",
+      //         pathname: "/**",
+      //       },
+      //       {
+      //         protocol: "https",
+      //         hostname: "www.autopediame.com",
+      //         pathname: "/**",
+      //       },
+      //       {
+      //         protocol: "https",
+      //         hostname: "media.autoexpress.co.uk",
+      //         pathname: "/**",
+      //       },
+      //       {
+      //         protocol: "https",
+      //         hostname: "www.dubicars.com",
+      //         pathname: "/**",
+      //       },
+      //       {
+      //         protocol: "https",
+      //         hostname: "citymagazine.b-cdn.net",
+      //         pathname: "/**",
+      //       },
+      //     {
+      //         protocol: "https",
+      //         hostname: "i.ytimg.com",
+      //         pathname: "/**",
+      //       },
+      //     {
+      //         protocol: "https",
+      //         hostname: "static0.carbuzzimages.com",
+      //         pathname: "/**",
+      //       },
+      // {
+      //   protocol: "https",
+      //   hostname: "saudishift.com",
+      //   pathname: "/wp-content/uploads/**",
+      // },
