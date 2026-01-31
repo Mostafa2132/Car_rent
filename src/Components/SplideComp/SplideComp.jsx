@@ -44,7 +44,7 @@ export default function SplideComp() {
         {brands.map((brand) => (
           <SplideSlide key={brand.name}>
             <Link
-              href={`/brands/${brand.name.toLowerCase()}`}
+              href={`./brands/${brand.name.toLowerCase()}`}
               className="group block h-full"
             >
               <div className="bg-slate-900 rounded-3xl p-8 shadow-lg shadow-black/50 hover:shadow-2xl hover:shadow-amber-600/20 transition-all duration-300 h-full flex flex-col items-center justify-center relative overflow-hidden border border-slate-800 group-hover:border-amber-600/50">
