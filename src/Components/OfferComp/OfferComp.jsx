@@ -308,7 +308,7 @@ export default function OfferComp() {
             Can't find what you're looking for?
           </p>
           <Link
-            href="/cars"
+            href="/"
             className="inline-flex items-center gap-2 px-6 py-3 bg-slate-900/80 backdrop-blur-xl border border-slate-700/50 hover:border-amber-500/50 text-white rounded-xl font-medium transition-all hover:scale-105 group"
           >
             View All Cars
