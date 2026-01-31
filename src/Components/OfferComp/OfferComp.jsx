@@ -29,7 +29,9 @@ export default function OfferComp() {
 
       setTimeLeft({
         days: Math.floor(distance / (1000 * 60 * 60 * 24)),
-        hours: Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)),
+        hours: Math.floor(
+          (distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60),
+        ),
         minutes: Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60)),
         seconds: Math.floor((distance % (1000 * 60)) / 1000),
       });
@@ -71,14 +73,44 @@ export default function OfferComp() {
   const TimeBox = ({ value, label }) => (
     <div className="flex flex-col items-center">
       <div className="relative">
-        <div className="absolute inset-0 bg-gradient-to-br from-amber-500/20 to-orange-500/20 rounded-2xl blur-xl"></div>
-        <div className="relative bg-slate-900/90 backdrop-blur-xl border border-slate-700/50 rounded-2xl px-6 py-4 min-w-[80px]">
-          <span className="text-4xl font-black text-transparent bg-gradient-to-br from-amber-400 to-orange-500 bg-clip-text">
+        {/* Glow */}
+        <div
+          className="absolute inset-0 bg-gradient-to-br from-amber-500/20 to-orange-500/20 
+        rounded-xl sm:rounded-2xl blur-lg sm:blur-xl"
+        ></div>
+
+        {/* Box */}
+        <div
+          className="
+          relative
+          bg-slate-900/90 backdrop-blur-xl
+          border border-slate-700/50
+          rounded-xl sm:rounded-2xl
+          px-4 py-3 sm:px-6 sm:py-4
+          min-w-[64px] sm:min-w-[80px]
+        "
+        >
+          <span
+            className="
+            block text-center font-black
+            text-2xl sm:text-3xl lg:text-4xl
+            text-transparent bg-gradient-to-br from-amber-400 to-orange-500 bg-clip-text
+          "
+          >
             {value.toString().padStart(2, "0")}
           </span>
         </div>
       </div>
-      <span className="text-slate-400 text-sm font-medium mt-2 uppercase tracking-wider">
+
+      {/* Label */}
+      <span
+        className="
+        mt-1 sm:mt-2
+        text-[10px] sm:text-sm
+        text-slate-400 font-medium
+        uppercase tracking-wider
+      "
+      >
         {label}
       </span>
     </div>
@@ -116,11 +148,11 @@ export default function OfferComp() {
 
         {/* Main Offer Banner */}
         <div className="relative mb-12">
-          <div className="absolute -inset-1 bg-gradient-to-r from-amber-500/30 via-orange-500/30 to-amber-500/30 rounded-3xl blur-2xl opacity-50"></div>
-          
+          <div className="absolute -inset-1 bg-gradient-to-r from-amber-500/30 via-orange-500/30 to-amber-500/30 rounded-3xl blur-2xl opacity-50"/>
+
           <div className="relative bg-gradient-to-br from-slate-900/90 to-slate-800/90 backdrop-blur-xl border border-slate-700/50 rounded-3xl overflow-hidden">
-            <div className="absolute top-0 right-0 w-1/2 h-full opacity-10">
-              <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,#f59e0b,transparent_70%)]"></div>
+            <div className="absolute top-0 right-0 w-full h-full opacity-10">
+              <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,#f59e0b,transparent_70%)]"/>
             </div>
 
             <div className="relative grid lg:grid-cols-2 gap-8 p-8 lg:p-12">
@@ -128,7 +160,9 @@ export default function OfferComp() {
               <div className="space-y-6">
                 <div className="inline-flex items-center gap-2 px-4 py-2 bg-red-500/10 border border-red-500/30 rounded-full">
                   <FiClock className="text-red-400" />
-                  <span className="text-red-400 text-sm font-bold">Ending Soon</span>
+                  <span className="text-red-400 text-sm font-bold">
+                    Ending Soon
+                  </span>
                 </div>
 
                 <div>
@@ -141,18 +175,31 @@ export default function OfferComp() {
                     Super Flash Sale
                   </p>
                   <p className="text-slate-400 text-lg">
-                    Book any premium vehicle and get instant 50% discount on your first day rental
+                    Book any premium vehicle and get instant 50% discount on
+                    your first day rental
                   </p>
                 </div>
 
                 <div className="flex items-center gap-3">
                   <div className="px-4 py-2 bg-slate-800/50 border border-slate-700/50 rounded-xl">
                     <span className="text-slate-400 text-sm">Use Code:</span>
-                    <span className="text-amber-400 font-black text-lg ml-2">MEGA50</span>
+                    <span className="text-amber-400 font-black text-lg ml-2">
+                      MEGA50
+                    </span>
                   </div>
                   <button className="p-3 bg-slate-800/50 hover:bg-slate-700/50 border border-slate-700/50 rounded-xl transition-all">
-                    <svg className="w-5 h-5 text-slate-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z" />
+                    <svg
+                      className="w-5 h-5 text-slate-400"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={2}
+                        d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z"
+                      />
                     </svg>
                   </button>
                 </div>
@@ -167,35 +214,39 @@ export default function OfferComp() {
               </div>
 
               {/* Right Side - Countdown */}
+              {/* Countdown */}
               <div className="flex items-center justify-center">
                 <div className="space-y-6">
-                  <div className="text-center">
-                    <p className="text-slate-400 text-sm uppercase tracking-widest mb-4">
-                      Offer Ends In
-                    </p>
-                  </div>
+                  <p className="text-center text-slate-400 text-sm uppercase tracking-widest">
+                    Offer Ends In
+                  </p>
 
-                  <div className="flex gap-3">
+                  {/* Mobile: Grid | Desktop: Flex */}
+                  <div className="grid grid-cols-2 gap-4 md:flex md:items-center md:gap-3">
                     <TimeBox value={timeLeft.days} label="Days" />
-                    <div className="flex items-center pb-8">
-                      <span className="text-3xl font-black text-amber-400">:</span>
-                    </div>
+
+                    <span className="hidden md:flex text-3xl font-black text-amber-400 pb-8">
+                      :
+                    </span>
+
                     <TimeBox value={timeLeft.hours} label="Hours" />
-                    <div className="flex items-center pb-8">
-                      <span className="text-3xl font-black text-amber-400">:</span>
-                    </div>
+
+                    <span className="hidden md:flex text-3xl font-black text-amber-400 pb-8">
+                      :
+                    </span>
+
                     <TimeBox value={timeLeft.minutes} label="Mins" />
-                    <div className="flex items-center pb-8">
-                      <span className="text-3xl font-black text-amber-400">:</span>
-                    </div>
+
+                    <span className="hidden md:flex text-3xl font-black text-amber-400 pb-8">
+                      :
+                    </span>
+
                     <TimeBox value={timeLeft.seconds} label="Secs" />
                   </div>
 
-                  <div className="text-center pt-4">
-                    <p className="text-amber-400 text-sm font-bold animate-pulse">
-                      ⚡ Limited spots available
-                    </p>
-                  </div>
+                  <p className="text-center text-amber-400 text-sm font-bold animate-pulse">
+                    ⚡ Limited spots available
+                  </p>
                 </div>
               </div>
             </div>
@@ -211,30 +262,36 @@ export default function OfferComp() {
               style={{ animationDelay: `${index * 100}ms` }}
             >
               <div className="absolute -inset-1 bg-gradient-to-br from-amber-500/20 to-orange-500/20 rounded-2xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-              
+
               <div className="relative bg-slate-900/80 backdrop-blur-xl border border-slate-700/50 rounded-2xl p-6 hover:border-amber-500/30 transition-all duration-300">
-                <div className={`inline-flex items-center justify-center w-16 h-16 rounded-2xl bg-gradient-to-br ${offer.gradient} mb-4 shadow-lg`}>
-                  {React.cloneElement(offer.icon, { className: "w-8 h-8 text-slate-950" })}
+                <div
+                  className={`inline-flex items-center justify-center w-16 h-16 rounded-2xl bg-gradient-to-br ${offer.gradient} mb-4 shadow-lg`}
+                >
+                  {React.cloneElement(offer.icon, {
+                    className: "w-8 h-8 text-slate-950",
+                  })}
                 </div>
 
                 <h3 className="text-xl font-bold text-white mb-2">
                   {offer.title}
                 </h3>
-                
+
                 <div className="text-4xl font-black mb-3">
-                  <span className={`bg-gradient-to-r ${offer.gradient} bg-clip-text text-transparent`}>
+                  <span
+                    className={`bg-gradient-to-r ${offer.gradient} bg-clip-text text-transparent`}
+                  >
                     {offer.discount}
                   </span>
                 </div>
 
-                <p className="text-slate-400 mb-4">
-                  {offer.description}
-                </p>
+                <p className="text-slate-400 mb-4">{offer.description}</p>
 
                 <div className="flex items-center justify-between pt-4 border-t border-slate-800/50">
                   <div className="flex items-center gap-2">
                     <span className="text-xs text-slate-500">Code:</span>
-                    <span className="text-sm font-bold text-amber-400">{offer.code}</span>
+                    <span className="text-sm font-bold text-amber-400">
+                      {offer.code}
+                    </span>
                   </div>
                   <button className="p-2 bg-slate-800/50 hover:bg-slate-700/50 rounded-lg transition-all group-hover:bg-amber-500/10 group-hover:border-amber-500/30 border border-slate-700/50">
                     <FiArrowRight className="w-4 h-4 text-slate-400 group-hover:text-amber-400 transition-colors" />

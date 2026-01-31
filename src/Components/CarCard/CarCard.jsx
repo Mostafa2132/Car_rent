@@ -12,8 +12,6 @@ export default function CarCard({ car }) {
   const [isHovered, setIsHovered] = useState(false);
   const [imageLoaded, setImageLoaded] = useState(false);
 
-
-
   return (
     <div
       className="group relative bg-slate-900/80 backdrop-blur-xl border border-slate-700/50 rounded-2xl overflow-hidden transition-all duration-500 hover:border-amber-500/50 hover:shadow-2xl hover:shadow-amber-500/10"
@@ -122,10 +120,13 @@ export default function CarCard({ car }) {
             </div>
 
             {/* Rent button */}
-            <Link href={`/cars/${car.title.replace(/\s+/g, '-').toLowerCase()}/${car.id}`} className="px-6 py-3 bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-400 hover:to-amber-500 text-slate-950 rounded-xl font-bold text-sm transition-all hover:scale-105 active:scale-95 shadow-lg shadow-amber-500/20 flex items-center space-x-2 group/rent">
+            <Link
+              prefetch={false}
+              href={`/cars/${car.title.replace(/\s+/g, "-").toLowerCase()}/${car.id}`}
+              className="px-6 py-3 bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-400 hover:to-amber-500 text-slate-950 rounded-xl font-bold text-sm transition-all hover:scale-105 active:scale-95 shadow-lg shadow-amber-500/20 flex items-center space-x-2 group/rent"
+            >
               <span>Rent Now</span>
-          <GrFormNextLink className="w-4 h-4 group-hover/rent:translate-x-1 transition-transform" />
-
+              <GrFormNextLink className="w-4 h-4 group-hover/rent:translate-x-1 transition-transform" />
             </Link>
           </div>
         </div>
